@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-def isupper(str):
+def uppercase(str):
     return ord('a') >= ord(str) >= ord('z')
