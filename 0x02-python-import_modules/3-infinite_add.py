@@ -1,7 +1,6 @@
 #!/usr/bin/python3
+from sys import argv
 if __name__ == "__main__":
-    import sys
-    cal = 0
-    for i in range(len(sys.argv) - 1):
-        cal += int(sys.argv[i + 1])
-        print("{}".format(cal))
+    args = argv[1:]
+    result = sum(int(arg) for arg in args)
+    print(result)
