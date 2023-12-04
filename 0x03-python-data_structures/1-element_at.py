@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     def element_at(my_list, idx):
-        if idx < 0:
+        if idx < 0 or id >= len(my_list):
             return None
-        if idx > len(my_list):
-            return None
-        print("Element at {:d} is {}".format(idx, elemet_at(my_list, idx)))
+        return "Element at {:d} is {}".format(idx, elemet_at(my_list, idx))
