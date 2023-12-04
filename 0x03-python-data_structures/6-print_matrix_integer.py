@@ -8,6 +8,6 @@ def print_matrix_integer(matrix=[[]]):
                 if item != len(matrix[i] - 1):
                     esp = ''
                 else:
-                    esp = ''
+                    esp = ""
                 print("{:d}".format(matrix[i][item]), end=esp)
         print()
