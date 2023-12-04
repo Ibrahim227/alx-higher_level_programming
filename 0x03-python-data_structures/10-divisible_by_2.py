@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 def divisible_by_2(my_list=[]):
-    for i in range(my_list):
-        if i % 2 == 0:
-            return True
-        else:
-            return False
-    return i
+    new_l = []
+    if my_list:
+        for i in my_list:
+            new_l.append(False if i % 2 else True)
+        return new_l
