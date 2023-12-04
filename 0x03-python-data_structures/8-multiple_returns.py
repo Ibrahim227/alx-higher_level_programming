@@ -6,4 +6,4 @@ def multiple_returns(sentence):
         len_s = len(sentence)
     else:
         len_s = 0
-    return "Length: {:d} - First character: {}".format(len(sentence), sentence[:1])
+    return (len_s, sentence if not sentence else sentence[:1])
