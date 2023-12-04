@@ -4,5 +4,6 @@ def replace_int_list(my_list, idx, element):
         return my_list
     if idx >= len(my_list):
         return my_list
-    my_list[idx] = element
+    new_element = element
+    my_list[idx] = new_element
     return my_list
