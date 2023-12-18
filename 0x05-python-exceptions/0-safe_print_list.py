@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
+    count = 0
     try:
-        print("{:d}".format(x))
-        return x
-    except Exception:
-        return
+        for i in range(x):
+            print("{:d}".format(my_list[i]))
+            count += 1
+    except IndexError:
+        pass
+    finally:
+        return count
