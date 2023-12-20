@@ -6,6 +6,9 @@ class Square:
     This is a Docstring for my Class Square
 
     """
+    def __init__(self):
+        pass
+
     def squrare(self):
         """
         Define a classe method square inside the class Square
@@ -13,8 +16,9 @@ class Square:
 
         """
         print(Square().square())
-"""
 
+
+"""
 This is a Docstring for 0-square
 It should to print an overview of the module
 
