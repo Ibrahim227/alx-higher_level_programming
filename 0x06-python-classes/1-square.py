@@ -12,4 +12,3 @@ class Square:
             size: length of side square
         """
         self.__size = size
-
