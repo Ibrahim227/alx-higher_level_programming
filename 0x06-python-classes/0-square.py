@@ -13,3 +13,9 @@ class Square:
 
         """
         print(Square().square())
+"""
+
+This is a Docstring for 0-square
+It should to print an overview of the module
+
+"""
