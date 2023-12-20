@@ -1,6 +1,15 @@
 #!/usr/bin/python3
 class Square:
-    """ Define a Class called Square"""
+    """
+    Define a Class called Square
+    This is a test of Docstring creation
+    This is a Docstring for my Class Square
+
+    """
     def squrare(self):
-        """ Define a classe method square inside the class Square"""
+        """
+        Define a classe method square inside the class Square
+        This is a docstring for my function square
+
+        """
         print(Square().square())
