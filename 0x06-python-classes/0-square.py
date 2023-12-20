@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" A module for square"""
 class Square:
     """
     Define a Class called Square
@@ -6,20 +7,4 @@ class Square:
     This is a Docstring for my Class Square
 
     """
-    def __init__(self):
-        pass
-
-    def squrare(self):
-        """
-        Define a classe method square inside the class Square
-        This is a docstring for my function square
-
-        """
-        print(Square().square())
-
-
-"""
-This is a Docstring for 0-square
-It should to print an overview of the module
-
-"""
+    pass
