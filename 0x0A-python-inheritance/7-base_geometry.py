@@ -13,6 +13,7 @@ class BaseGeometry:
         self.name = name
         self.value = value
     try:    
-        if value <= 0:
+        if self.value <= 0:
+            print("")
     except TypeError:
-        print("<name> must be greater than 0"
+        print("<name> must be greater than 0")
