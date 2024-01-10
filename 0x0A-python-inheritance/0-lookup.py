@@ -3,6 +3,5 @@
 
 
 def lookup(obj):
-    """ returns the list of\
-        of available attr"""
-    print(obj.__dict__, end="")
+    """ returns the listof available attr"""
+    return (dir(obj))
