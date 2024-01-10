@@ -5,4 +5,4 @@
 class MyList(list):
     """Define class MyList"""
     def print_sorted(self):
-        print(self)
+        print(sorted(self))
