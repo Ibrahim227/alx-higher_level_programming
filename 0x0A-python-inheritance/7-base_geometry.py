@@ -12,8 +12,7 @@ class BaseGeometry:
         """Validates value"""
         self.name = name
         self.value = value
-        
-    if value <= 0:
-        raisae Exception("<name> must be greater than 0")
-    if value != int:
-        raise Exception("<name> must be an integer")
+    try:    
+        if value <= 0:
+    except TypeError:
+        print("<name> must be greater than 0"
