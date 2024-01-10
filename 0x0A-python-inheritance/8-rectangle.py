@@ -8,6 +8,4 @@ class BaseGeometry:
         """constructor"""
         self.__width = width
         self.__height = height
-
-        if self.__width and self.__height < 0:
-            break
+        pass
