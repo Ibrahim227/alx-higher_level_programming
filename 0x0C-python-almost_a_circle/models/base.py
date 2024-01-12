@@ -4,10 +4,10 @@
 
 class Base:
     """Define new class Base"""
-    __nb_objects = 0
     def __init__(self, id=None):
         """Define the construtor"""
         self.id = id
+        __nb_objects = 0
 
         if id is not None:
             id = self.id
