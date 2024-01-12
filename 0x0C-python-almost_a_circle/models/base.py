@@ -6,11 +6,11 @@ class Base:
     """Define new class Base"""
     def __init__(self, id=None):
         """Define the construtor"""
-        self.id = id
+        self.id : int = id
         __nb_objects = 0
 
         if id is not None:
             id = self.id
         else:
             __nb_objects += 1
-            self.id = __nb_objects   
+            id = __nb_objects   
