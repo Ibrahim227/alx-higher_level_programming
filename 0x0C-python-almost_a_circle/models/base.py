@@ -9,7 +9,7 @@ class Base:
         """Define the construtor"""
         self.id = id
 
-        if id ia not None:
+        if id is not None:
             id = self.id
         else:
             __nb_objects += 1
