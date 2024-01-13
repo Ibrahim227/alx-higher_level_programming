@@ -27,7 +27,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-    self.__height = value
+        self.__height = value
 
     @x.getter
     def x(self):
