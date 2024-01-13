@@ -7,8 +7,40 @@ class Rectangle(Base):
     """Defines class Rectangle that inherit from Base class"""
     def __init__(self, width, height, x=0, y=0, id=None):
         """Defines the constructor"""
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
         super().__init__(id)
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
+
+    @width.getter
+    def width(self):
+        return self.__width
+
+    @width.setter
+    def width(self, value):
+        self.__width = value
+
+    @height.getter
+    def height(self):
+        return self.__height
+
+    @height.setter
+    def height(self, value):
+    self.__height = value
+
+    @x.getter
+    def x(self):
+        return self.__x
+
+    @x.setter
+    def x(self, value):
+        self.__x = value
+
+    @y.getter
+    def y(self):
+        return self.__y
+
+    @y.setter
+    def y(self, value):
+        self.__y = value
