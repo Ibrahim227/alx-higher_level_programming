@@ -2,6 +2,7 @@
 """Documentation Modules"""
 from models.rectangle import Rectangle
 
+
 class Square(Rectangle):
     """Defines class Square that inherit from class Rectanglee"""
     def __init__(self, size, x=0, y=0, id=None):
@@ -26,7 +27,7 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         """assigns attributes"""
-       attr = ["id", "size", "x", "y"]
+        attr = ["id", "size", "x", "y"]
         if args:
             setattr(self, attr[i], args)
         elif kwargs:
