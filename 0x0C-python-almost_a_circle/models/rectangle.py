@@ -88,3 +88,9 @@ class Rectangle(Base):
             for key, value in kwargs.items():
                 if key in attr:
                     setattr(self, key, value)
+
+    def to_dictionary(self):
+        """Returns the dictionary representation of a Rectangle"""
+        return dict((
+                f"[Rectangle] ({self.id}) "
+                f"{self.x}/{self.y} - {self.width}/{self.height}"))
