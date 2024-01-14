@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """ 9-main """
 from models.square import Square
 
@@ -21,3 +22,4 @@ if __name__ == "__main__":
     print(s3)
     print(s3.area())
     s3.display()
+
