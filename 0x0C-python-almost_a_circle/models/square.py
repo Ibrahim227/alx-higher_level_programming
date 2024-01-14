@@ -21,5 +21,5 @@ class Square(Rectangle):
         """Override str methode for Square"""
         return (
                 f"[Square] ({self.id}) "
-                f"{self.x}/{self.y} - {self.size}
+                f"{self.x}/{self.y} - {self.size}"
         )
