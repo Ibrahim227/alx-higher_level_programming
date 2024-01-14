@@ -9,6 +9,12 @@ class Square(Rectangle):
         """Defines the constructor"""
         super().__init__(size, size, x, y, id=None)
 
+    def __str__(self):
+        """overrides str method for Square"""
+        return (
+                f"[Square] {self.id} "
+                f"{self.x}/{self.y} - {self.size}"
+            )
     @property
     def size(self):
         return self.width
