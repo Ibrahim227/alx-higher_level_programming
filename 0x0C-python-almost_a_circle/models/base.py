@@ -60,4 +60,3 @@ class Base:
         filename = cls.__name__ + ".json"
         if not filename:
             return []
-        return 
