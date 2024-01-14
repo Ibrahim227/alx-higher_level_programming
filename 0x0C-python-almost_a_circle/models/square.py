@@ -12,7 +12,7 @@ class Square(Rectangle):
     def __str__(self):
         """overrides str method for Square"""
         return (
-                f"[Square] {(self.id)} "
+                f"[Square] ({self.id}) "
                 f"{self.x}/{self.y} - {self.size}"
             )
     @property
