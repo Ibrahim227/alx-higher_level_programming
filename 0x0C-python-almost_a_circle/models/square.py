@@ -10,4 +10,3 @@ class Square(Rectangle):
         self.size = size
         self.x = x
         self.y = y
-        self.id = id
