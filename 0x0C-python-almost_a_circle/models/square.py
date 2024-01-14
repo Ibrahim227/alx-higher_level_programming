@@ -24,13 +24,6 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
-    def __str__(self):
-        """Override str methode for Square"""
-        return (
-                f"[Square] ({self.id}) "
-                f"{self.x}/{self.y} - {self.size}"
-        )
-
     def update(self, *args, **kwargs):
         """assigns attributes"""
         attr = ["id", "size", "x", "y"]
