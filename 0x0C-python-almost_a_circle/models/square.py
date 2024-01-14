@@ -31,6 +31,6 @@ class Square(Rectangle):
         if args:
             setattr(self, attr[0], args[0])
         elif kwargs:
-            for key, value in kwargs.itms():
+            for key, value in kwargs.items():
                 for key in attr:
                     setattr(self, key, value)
