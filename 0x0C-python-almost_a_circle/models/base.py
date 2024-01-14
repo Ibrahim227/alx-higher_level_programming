@@ -38,5 +38,5 @@ class Base:
     def from_json_string(json_string):
         """returns the list of the JSON string representation json_string"""
         if not json_string or len(json_string) == 0:
-            json_string = []
-        return list(json_string)
+            return []
+        return json.loads(json_string)
