@@ -23,3 +23,7 @@ class Square(Rectangle):
                 f"[Square] ({self.id}) "
                 f"{self.x}/{self.y} - {self.size}"
         )
+
+    def update(self, *args, **kwargs):
+        """assigns attributes"""
+        
