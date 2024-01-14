@@ -39,4 +39,4 @@ class Base:
         """returns the list of the JSON string representation json_string"""
         if not json_string or len(json_string) == 0:
             return []
-        return json.loads(json_string)
+        return json.loads(json_string, object_pairs_hook=dict)
