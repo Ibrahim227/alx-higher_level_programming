@@ -81,3 +81,4 @@ class Rectangle(Base):
         attr = ["id", "width", "height", "x", "y"]
         for i in range(len(args)):
             setattr(self, attr[i], args[i])
+        return f"({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
