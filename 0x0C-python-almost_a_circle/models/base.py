@@ -40,3 +40,8 @@ class Base:
         if not json_string or len(json_string) == 0:
             return []
         return json.loads(json_string, object_pairs_hook=dict)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """returns an instance with all attributes already set"""
+        
