@@ -3,4 +3,7 @@ import unittest
 from models.rectangle import Rectangle
 
 
-class 
+class TestRectangle(unittest.TestCase):
+    """Defines a test class for rectangle"""
+    pass
+
