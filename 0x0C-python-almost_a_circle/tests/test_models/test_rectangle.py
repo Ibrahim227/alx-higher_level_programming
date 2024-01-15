@@ -15,7 +15,11 @@ class TestDisplay(unittest.TestCase):
     """Defines a test class for display func method"""
     pass
 
-class Test
+class Test__str__(unittest.TestCase):
+    """Defines  a test class for __str__ methos func"""
+    pass
+
+
 
 if __name__ == "__main__":
     unittest.main()
