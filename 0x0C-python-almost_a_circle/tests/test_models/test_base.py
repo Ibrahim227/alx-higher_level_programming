@@ -20,7 +20,9 @@ class TestBaseToString(unittest.TestCase):
                         [{"x": 2, "width": 10, "id": 1, "height": 7, "y": 8}],
                         <class 'str'>
                 ]"""
-
+        result = Base.to_json_string([{}])
+        expected = '[{}]'
+        self.assertEqual(result, expected)
 
 if __name__ == '__main__':
     unittest.main()
