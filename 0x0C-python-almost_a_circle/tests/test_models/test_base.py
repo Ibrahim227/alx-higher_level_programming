@@ -35,7 +35,7 @@ class TestBaseToString(unittest.TestCase):
         result = Base.to_json_string(None)
         self.assertEqual(result, "[]")
 
-class TestSaveToFile(unittest.TestCase
+class TestSaveToFile(unittest.TestCase):
     """Defines a test class for save_to_file"""
     pass
 
