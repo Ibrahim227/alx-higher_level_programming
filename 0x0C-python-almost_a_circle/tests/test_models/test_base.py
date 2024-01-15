@@ -34,5 +34,7 @@ class TestBaseToString(unittest.TestCase):
         """test no input"""
         result = Base.to_json_string(None)
         self.assertEqual(result, "[]")
+
+
 if __name__ == '__main__':
     unittest.main()
