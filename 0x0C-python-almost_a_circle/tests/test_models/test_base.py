@@ -24,6 +24,12 @@ class TestBaseToString(unittest.TestCase):
         expected = '[{}]'
         self.assertEqual(result, expected)
 
+    def test_list_with_empty__dict(self):
+        """Test empty list"""
+        result = Base.to_json_string([{}])
+        expected = '[{}]'
+        self.assertEqual(result, expected)
+
 
 if __name__ == '__main__':
     unittest.main()
