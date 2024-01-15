@@ -2,7 +2,7 @@
 """Define Documentation"""
 import unittest
 from models.base import Base
- 
+
 
 class TestBaseToString(unittest.TestCase):
     """Define class for Test"""
@@ -23,4 +23,4 @@ class TestBaseToString(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()       
+    unittest.main()
