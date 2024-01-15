@@ -23,7 +23,9 @@ class TestUpdate(unittes.TestCase):
     """Defines a test class for Update func methods"""
     pass
 
-
+class TestToDictionary(unittest.TestCase):
+    """Defines a test class for to_dictionary func method"""
+    pass
 
 if __name__ == "__main__":
     unittest.main()
