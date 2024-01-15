@@ -24,5 +24,7 @@ class TestBaseToString(unittest.TestCase):
         expected = '[{}]'
         self.assertEqual(result, expected)
 
+
+
 if __name__ == '__main__':
     unittest.main()
