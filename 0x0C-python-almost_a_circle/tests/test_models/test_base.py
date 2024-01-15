@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Define Documentation"""
 import unittest
-from .. .models.base import Base
+from ../.. models.base import Base
  
 
 class TestBaseToString(unittet.TestCase):
