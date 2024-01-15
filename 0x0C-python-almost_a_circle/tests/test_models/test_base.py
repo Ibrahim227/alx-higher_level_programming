@@ -13,7 +13,7 @@ class TestBaseToString(unittest.TestCase):
 
     def test_list_with_dictionaries(self):
         """test list with dict"""
-        list_dictionaries = [
+        
             
 
 
