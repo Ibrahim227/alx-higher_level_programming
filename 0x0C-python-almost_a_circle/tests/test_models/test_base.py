@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """Define Documentation"""
 import unittest
-from ..tests models.base import Base
+from models.base import Base
  
 
-class TestBaseToString(unittet.TestCase):
+class TestBaseToString(unittest.TestCase):
     """Define class for Test"""
     def test_to_json_string(list_dictionaries):
         """Defines test for function to_json_string"""
