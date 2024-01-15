@@ -46,5 +46,9 @@ class TestFromJsonToString(unittest.TestCase):
 class TestCreate(unittest.TestCase):
     """Defines a test class for Create function"""
     pass
+
+class TestLoadFromFile(unittest.TestCase):
+    """Defines a test class for load_from_File"""
+    pass
 if __name__ == '__main__':
     unittest.main()
