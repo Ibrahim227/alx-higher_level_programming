@@ -19,6 +19,10 @@ class Test__str__(unittest.TestCase):
     """Defines  a test class for __str__ methos func"""
     pass
 
+class TestUpdate(unittes.TestCase):
+    """Defines a test class for Update func methods"""
+    pass
+
 
 
 if __name__ == "__main__":
