@@ -6,10 +6,10 @@ from models.base import Base
 
 class TestBaseToString(unittest.TestCase):
     """Define class for Test"""
-    def test_to_json_string(list_dictionaries):
-        """Defines test for function to_json_string"""
-        self.assertIsNotNone(list_dictionaries)
-
+    def test_empty_list(self):
+        """Defines test for class TestBaseToString"""
+        result = Base.to_json_string([])
+        self.assertEqual(result, "[]")
 
 
 
