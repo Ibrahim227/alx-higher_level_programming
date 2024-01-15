@@ -15,6 +15,7 @@ class Square(Rectangle):
                 f"[Square] ({self.id}) "
                 f"{self.x}/{self.y} - {self.size}"
             )
+
     @property
     def size(self):
         return self.width
@@ -34,6 +35,7 @@ class Square(Rectangle):
             for key, value in kwargs.items():
                 if key in attr:
                     setattr(self, key, value)
+
     def to_dictionary(self):
         """returns the dictionary representation of a Square"""
         return {
