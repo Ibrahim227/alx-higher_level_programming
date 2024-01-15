@@ -11,6 +11,10 @@ class TestBaseToString(unittest.TestCase):
         result = Base.to_json_string([])
         self.assertEqual(result, "[]")
 
+    def test_list_with_dictionaries(self):
+        """test list with dict"""
+        list_dictionaries = [
+            
 
 
 if __name__ == '__main__':
