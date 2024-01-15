@@ -10,5 +10,12 @@ class TestRectangleMethods(unittest.TestCase):
 class TestArea(unittest.TestCase):
     """Defines a test class for Area methods"""
     pass
+
+class TestDisplay(unittest.TestCase):
+    """Defines a test class for display func method"""
+    pass
+
+class Test
+
 if __name__ == "__main__":
     unittest.main()
