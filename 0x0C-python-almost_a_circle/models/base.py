@@ -72,8 +72,8 @@ class Base:
         """Defines function savetofile_csv"""
         filename = cls.__name__ + ".csv"
         try:
-            with open(filename, 'r') as file:
-                csv_str = file.
+            with open(filename, 'r') as csvfile:
+                csv_str = csv.reader(csvfile, delimiter=' ', quotechar='|')
 
     @classmethod
     def load_from_file_csv(cls):
