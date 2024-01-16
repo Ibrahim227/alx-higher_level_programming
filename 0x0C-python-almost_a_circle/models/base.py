@@ -70,3 +70,8 @@ class Base:
     def save_to_file_csv(cls, list_objs):
         """Defines function savetofile_csv"""
         pass
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """Defines function loadfromfile_csv"""
+        pass
