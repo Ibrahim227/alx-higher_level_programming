@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Modules Documentation"""
 import json
+import csv
 
 
 class Base:
@@ -69,7 +70,10 @@ class Base:
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """Defines function savetofile_csv"""
-        pass
+        filename = cls.__name__ + ".csv"
+        try:
+            with open(filename, 'r') as file:
+                csv_str = file.
 
     @classmethod
     def load_from_file_csv(cls):
