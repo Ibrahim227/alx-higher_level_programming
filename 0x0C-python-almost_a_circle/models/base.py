@@ -58,14 +58,6 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """returns a list of instances"""
-        filename = cls.__name__ + ".json"
-        if cls.__name__ = 'Rectangle':
-            d_ins = cls(1, 1)
-        elif cls.__name__ = 'Square':
-            d_ins = cls(1)
-        else:
-            raise ValueError("Unsoported class for create method")
-
         try:
             with open(filename, 'r') as file:
                 json_string = file.read()
