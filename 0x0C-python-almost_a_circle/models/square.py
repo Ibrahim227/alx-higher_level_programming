@@ -4,10 +4,11 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """Defines class Square that inherit from class Rectanglee"""
+    """Defines class Square that inherit from class Rectangle"""
     def __init__(self, size, x=0, y=0, id=None):
         """Defines the constructor"""
         super().__init__(size, size, x, y, id=None)
+        self.
 
     def __str__(self):
         """overrides str method for Square"""
