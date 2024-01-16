@@ -23,7 +23,7 @@ class Test__str__(unittest.TestCase):
     pass
 
 
-class TestUpdate(unittes.TestCase):
+class TestUpdate(unittest.TestCase):
     """Defines a test class for Update func methods"""
     pass
 
