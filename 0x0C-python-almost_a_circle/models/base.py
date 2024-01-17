@@ -3,9 +3,6 @@
 import json
 import csv
 
-from rectangle import Rectangle
-from square import Square
-
 
 class Base:
     """Define new class Base"""
