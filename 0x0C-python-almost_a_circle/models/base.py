@@ -75,4 +75,4 @@ class Base:
             with open(filename, 'w', newline='') as csvfile:
                 csv_writer = csv.writer(csvfile)
                 for obj in list_objs:
-                    writer.writerow(obj.save_to_file())
+                    writer.writerow(obj.to_csv())
