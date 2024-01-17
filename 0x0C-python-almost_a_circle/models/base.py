@@ -66,3 +66,14 @@ class Base:
                 return [cls.create(**d) for d in dictionaries]
         except FileNotFoundError:
             return []
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """Defines a function that save file to csv"""
+        filename = cls.__name__ + ".csv"
+        try:
+            with open(filename, 'r') as csvfile:
+                csv_str = csv.reader(csvfile)
+            return csv_str
+        except FileNotFoundError:
+            return []
