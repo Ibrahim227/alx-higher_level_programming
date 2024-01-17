@@ -3,6 +3,9 @@
 import json
 import csv
 
+from models.rectangle import Rectangle
+from models.square import Square
+
 
 class Base:
     """Define new class Base"""
