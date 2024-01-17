@@ -73,3 +73,4 @@ class Base:
         try:
             with open(filename, 'r') as csvfile:
                 csv_str = csv.reader(csvfile, delimiter=' ', quotechar='|')
+                print(csv_str)
