@@ -100,7 +100,7 @@ class Rectangle(Base):
                 'width': self.width
             }
 
- def to_csv(self):
+    def to_csv(self):
         """Defines a ffunction to convert to csv"""
         return [self.id, self.width, self.height, self.x, self.y]
 
