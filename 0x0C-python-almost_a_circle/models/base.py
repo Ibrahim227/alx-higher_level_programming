@@ -1,8 +1,5 @@
 #!/usr/bin/python3
 """Modules Documentation"""
-from models.rectangle import Rectangle
-from models.square import Square
-
 import json
 import csv
 
@@ -75,8 +72,7 @@ class Base:
         """Defines a function that save file to csv"""
         filename = cls.__name__ + ".csv"
         try:
-            with open(filename, 'r') as csvfile:
-                csv_str = csv.reader(csvfile)
-            return csv_str
-        except FileNotFoundError:
-            return []
+            with open(filename, 'w', newline='') as csvfile:
+                csv_writer =csv.writer(csvfile)
+                for obj in list_objs:
+                    writer.writerow(obj.save_to_file())
