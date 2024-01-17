@@ -74,7 +74,7 @@ class Base:
             with open(filename, 'r') as csvfile:
                 csv_str = csv.reader(csvfile, delimiter=' ', quotechar='|')
 
-    #@classmethod
+   """ #@classmethod
     def load_from_file_csv(cls):
         """Defines function loadfromfile_csv"""
-        pass
+        pass"""
