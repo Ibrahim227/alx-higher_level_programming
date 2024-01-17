@@ -45,3 +45,12 @@ class Square(Rectangle):
                 'size': self.width,
                 'y': self.y
             }
+
+    def to_csv(self):
+        """Defines a ffunction to convert to csv"""
+        return [self.id, self.size, self.x, self.y]
+
+    @classmethod
+    def from_csv(cls, row):
+        """Defines function from csv"""
+        return cls(*map(int, row))
