@@ -73,6 +73,6 @@ class Base:
         filename = cls.__name__ + ".csv"
         try:
             with open(filename, 'w', newline='') as csvfile:
-                csv_writer =csv.writer(csvfile)
+                csv_writer = csv.writer(csvfile)
                 for obj in list_objs:
                     writer.writerow(obj.save_to_file())
