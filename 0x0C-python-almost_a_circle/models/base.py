@@ -76,3 +76,17 @@ class Base:
                 csv_writer = csv.writer(csvfile)
                 for obj in list_objs:
                     csv_writer.writerow(obj.to_csv())
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """defines function to load from csv"""
+        filename = cls.__name__ + ".csv"
+        with open(filename, 'r') as csvfile:
+            csv_reader = csv.reader(csvfile)
+            instance = []
+            for row in csv_reader:
+                instance = cls.from_csv(row)
+                instances.append(instance)
+            return instances
+        except FileNotFoundError:
+            return []
