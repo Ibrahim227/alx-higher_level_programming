@@ -3,8 +3,8 @@
 import json
 import csv
 
-from models.rectangle import Rectangle
-from models.square import Square
+from rectangle import Rectangle
+from square import Square
 
 
 class Base:
