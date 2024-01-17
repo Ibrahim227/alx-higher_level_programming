@@ -99,3 +99,12 @@ class Rectangle(Base):
                 'height': self.height,
                 'width': self.width
             }
+
+ def to_csv(self):
+        """Defines a ffunction to convert to csv"""
+        return [self.id, self.width, self.height, self.x, self.y]
+
+    @classmethod
+    def from_csv(cls, row):
+        """Defines function from csv"""
+        return cls(*map(int, row))
