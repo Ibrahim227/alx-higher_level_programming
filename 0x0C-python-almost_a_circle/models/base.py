@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 """Modules Documentation"""
+from models.rectangle import Rectangle
+from models.square import Square
+
 import json
 import csv
 
