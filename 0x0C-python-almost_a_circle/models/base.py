@@ -83,7 +83,7 @@ class Base:
     def load_from_file_csv(cls):
         """defines function to load from csv"""
         filename = cls.__name__ + ".csv"
-        instance = []
+        instances = []
         try:
             with open(filename, 'r') as csvfile:
                 csv_reader = csv.reader(csvfile)
