@@ -87,7 +87,7 @@ class Base:
             for row in csv_reader:
                 instance = cls.from_csv(row)
                 instances.append(instance)
-            return instances
+        return instances
         except FileNotFoundError:
             return []
 
