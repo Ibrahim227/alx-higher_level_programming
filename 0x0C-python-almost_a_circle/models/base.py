@@ -90,3 +90,8 @@ class Base:
             return instances
         except FileNotFoundError:
             return []
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """Defines a function that draw all Square and Rectangle"""
+        pass
