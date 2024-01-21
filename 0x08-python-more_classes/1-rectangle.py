@@ -7,7 +7,7 @@ class Rectangle:
     def __init__(self, width, height):
         """Defines the constructor"""
         self.__width = width
-        slef.__height = height
+        self.__height = height
 
     @property
     def width(self):
