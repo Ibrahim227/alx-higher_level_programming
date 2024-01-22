@@ -40,8 +40,8 @@ class Rectangle:
 
     def perimeter(self):
         #return 2 * (self.__width + self.__height)
-        for i in range(self.__y):
-            print()
-        for i in range(self.__height):
-            print(" " * self.__x + '#' * self.__width)
-        return 2 * (self.__width + self.__height)
+        if (self.__width or self.__height) == 0:
+            return 0
+        if (self.__width or self.__height) == 0:
+            return ''
+        return 2 * ("" + self.__width + '#' + self.__height)
