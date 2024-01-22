@@ -42,4 +42,9 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        return '#'
+        if self._width == 0 or self._height == 0:
+            return ""
+        rectangle_str = ""
+        for _ in range(self._height):
+            rectangle_str += "#" * self._width + "\n"
+        return rectangle_str.rstrip()
