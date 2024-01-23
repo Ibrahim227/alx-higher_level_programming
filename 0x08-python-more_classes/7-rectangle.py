@@ -54,3 +54,5 @@ class Rectangle:
 
     def __repr__(self):
         return ("Bye rectangle...")
+
+    print("Bye rectangle...")
