@@ -4,6 +4,7 @@
 
 class Rectangle:
     """Defines a class Rectangle"""
+    number_of_instances = 0
     def __init__(self, width=0, height=0):
         """Defines the constructor"""
         self.__width = width
@@ -34,6 +35,8 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    print_symbol = 0
 
     def area(self):
         return self.__width * self.__height
