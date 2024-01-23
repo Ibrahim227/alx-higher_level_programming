@@ -53,5 +53,9 @@ class Rectangle:
         return rectangle_str.rstrip()
 
     def __repr__(self):
-        return ("Bye rectangle...")
+        pass
     print("Bye rectangle")
+
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        pass
