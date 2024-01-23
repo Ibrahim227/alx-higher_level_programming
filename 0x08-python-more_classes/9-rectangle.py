@@ -62,4 +62,4 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        return self.__width == self.__height == self.size
+        return cls.__width == cls.__height == cls.size
