@@ -50,4 +50,4 @@ class Rectangle:
         return rectangle_str.rstrip()
 
     def __repr__(self):
-        print("Bye rectangle...")
+        return ("Bye rectangle...")
