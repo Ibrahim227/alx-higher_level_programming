@@ -4,6 +4,7 @@
 
 class Rectangle:
     """Defines a class Rectangle"""
+    number_of_instances = 0
     def __init__(self, width=0, height=0):
         """Defines the constructor"""
         self.__width = width
@@ -35,6 +36,8 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = value
 
+    print_symbol = '#'
+
     def area(self):
         return self.__width * self.__height
 
@@ -50,4 +53,13 @@ class Rectangle:
         return rectangle_str.rstrip()
 
     def __repr__(self):
-        return ("Bye rectangle...")
+        pass
+    print("Bye rectangle...")
+
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        pass
+
+    @classmethod
+    def square(cls, size=0):
+        return self.__width == self.__height == self.size
