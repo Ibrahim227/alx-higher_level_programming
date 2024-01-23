@@ -54,7 +54,7 @@ class Rectangle:
 
     def __repr__(self):
         pass
-    print("Bye rectangle")
+    print("Bye rectangle...")
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
