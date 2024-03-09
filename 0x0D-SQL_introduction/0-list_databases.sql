@@ -1,2 +1,2 @@
 -- lists all databases of MySQL server
-mysql -u root -p -e "SHOW DATABASES;"
+mysql -u mysql -p -e "SHOW DATABASES;"
