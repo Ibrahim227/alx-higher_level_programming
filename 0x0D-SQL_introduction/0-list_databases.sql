@@ -1,2 +1,2 @@
 -- lists all databases of MySQL server
-SELECT * FROM 
+SELECT * FROM DATABASE;
