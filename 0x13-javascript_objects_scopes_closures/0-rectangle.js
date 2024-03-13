@@ -1,5 +1,5 @@
 #!/usr/bin/node
 
 class Rectangle {
-  return
+  return typeof(Rectangle);
 }
