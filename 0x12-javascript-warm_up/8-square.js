@@ -6,7 +6,7 @@ if (!isNaN(arg)) {
     let row = '';
     for (let j = 0; j < arg; j++) {
       row += 'X';
-    } 
+    }
     console.log(row);
   }
 } else {
