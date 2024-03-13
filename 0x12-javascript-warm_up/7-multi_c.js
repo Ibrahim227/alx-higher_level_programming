@@ -3,8 +3,8 @@ const arg = process.argv[2];
 
 const number = parseInt(arg);
 const strVar = "C is fun";
-if (!isNaN(number)) {
+while (number) {
   console.log(`${number}` * `${strVar}`);
-} else {
-  console.log('Missing number of occurrences');
 }
+console.log('Missing number of occurrences');
+
