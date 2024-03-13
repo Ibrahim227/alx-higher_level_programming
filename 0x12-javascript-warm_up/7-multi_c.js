@@ -3,7 +3,7 @@ const arg = process.argv[2];
 
 const number = parseInt(arg);
 if (!isNaN(number)) {
-  console.log(`My number: ${number}`);
+  console.log(`${number} * C is fun`);
 } else {
-  console.log('Not a number');
+  console.log('Missing number of occurrences');
 }
