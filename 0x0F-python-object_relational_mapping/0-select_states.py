@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 """Import the required module"""
-from MySQLdb import _mysql
+import MySQLdb
 
 
-db = _mysql.connect(host="localhost",port=3306,user="root",password="password",database="hbtn_0e_0_usa")
-db.query("""SELECT * from states""")
+db = MySQLdb.connect(host="localhost",port=3306,user="root",password="password",db="hbtn_0e_0_usa")
+cur = db.cursor()
 
-r = db.use_result()
-r.fetch_row()
+cur.execute("""SELECT * from states""")
