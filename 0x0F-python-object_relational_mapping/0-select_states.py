@@ -1,13 +1,10 @@
 #!/usr/bin/python3
 """Import the required module"""
+import sys
 import MySQLdb
 
-
-db = MySQLdb.connect(user="root",password="password",db="hbtn_0e_0_usa")
-cur = db.cursor()
-cur.execute("""SELECT id, name from states ORDER BY states.id LIMIT 5""")
-rows = cur.fetchall()
-for row in rows:
-    print(row)
-cur.close()
-db.close()
+if __name__ == "__main__":
+    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
+    c_db = db.cursor()
+    c.execute("SELECT * FROM `states` ORDER BY `id`")
+    [print(state) for state in c_db.fetchall() if state[1][0] == "N"]
