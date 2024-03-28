@@ -10,5 +10,5 @@ with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
             "Body message:\n"
             "\t - type: {}\n"
             "\t - content: {}\n"
-            "\t utf8 content: {}".format(
+            "\t - utf8 content: {}".format(
                 type(html), html, html.decode('utf-8')))
