@@ -7,7 +7,7 @@ with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
     html = response.read()
     if response.status == 200:
         print(
-            "Body message:\n"
+            "Body response:\n"
             "\t - type: {}\n"
             "\t - content: {}\n"
             "\t - utf8 content: {}".format(
