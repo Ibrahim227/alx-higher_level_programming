@@ -3,5 +3,7 @@
 import urllib
 
 
-req = urllib.request.urlopen('https://alx-intranet.hbtn.io/status')
-print(req.read)
+req = urllib.request.Request('https://alx-intranet.hbtn.io/status')
+pr = urllib.request.urlopen(req)
+print(pr.code)
+print(pr.read)
