@@ -3,9 +3,12 @@
 import urllib.request
 
 
-if __name__ == '__main__:':
-    with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
-        html = response.read()
-        values = {type: html}
-        print(f"Body response:'\t - :' {values}")
-        print(html)
+with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
+    html = response.read()
+    if response.status == 200:
+        print(
+            "Body message:\n"
+            "\t - type:{}\n"
+            "\t - content:{}\n"
+            "\t utf8 content:{}\n".format(
+                type(html), html, html.decode('utf-8')))
