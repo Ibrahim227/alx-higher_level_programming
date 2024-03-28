@@ -9,5 +9,5 @@ if __name__ == '__main__':
     m_req = urllib.request.Request(url)
     with urllib.request.urlopen(m_req) as resp:
         if "X-Request-Id" in resp.headers:
-            x_id = dict(resp.header).get("X-Request-Id")
+            x_id = dict(resp.headers).get("X-Request-Id")
             print(x_id)
