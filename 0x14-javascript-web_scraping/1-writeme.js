@@ -4,7 +4,7 @@ const fs = require('fs');
 
 function WriteStringToFile (filepath, content) {
   try {
-    fs.writeFileSync(filepath, content + '\n');
+    fs.writeFileSync(filepath, content + '\n', 'utf-8');
   } catch (err) {
     console.log('Error', err);
   }
