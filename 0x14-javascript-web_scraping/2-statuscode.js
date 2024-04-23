@@ -2,6 +2,7 @@
 
 const request = require('request');
 
+
 function displayStatusCode(url) {
   request.get(url, (error, response) => {
     if (error) {
