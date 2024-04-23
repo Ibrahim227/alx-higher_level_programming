@@ -3,13 +3,13 @@
 const fs = require('fs');
 
 function WriteStringToFile (filepath, content) {
-    fs.writeFile(filepath, content + '\n', 'utf-8', (err) => {
-	if (err) {
+  fs.writeFile(filepath, content + '\n', 'utf-8', (err) => {
+    if (err) {
 	  console.error(err);
-	} else {
+    } else {
 	  console.log('');
-	}
-    });
+    }
+  });
 }
 
 const filepath = process.argv[2];
