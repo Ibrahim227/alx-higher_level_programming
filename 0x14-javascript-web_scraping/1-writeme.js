@@ -5,9 +5,9 @@ const fs = require('fs');
 function WriteStringToFile (filepath, content) {
   fs.writeFile(filepath, content + '\n', 'utf-8', (err) => {
     if (err) {
-	  console.error(err);
+      console.error(err);
     } else {
-	  console.log('');
+        console.log('');
     }
   });
 }
