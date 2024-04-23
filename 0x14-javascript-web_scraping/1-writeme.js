@@ -4,9 +4,9 @@ const fs = require('fs');
 
 function WriteStringToFile (filepath, content) {
   try {
-    fs.writeFile(filepath, content);
+    fs.writeFileSync(filepath, content);
   } catch (err) {
-    console.log(err);
+    console.log(i'Error', err);
   }
 }
 
