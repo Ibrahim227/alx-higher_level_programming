@@ -6,7 +6,7 @@ function WriteStringToFile (filepath, content) {
   try {
     fs.writeFileSync(filepath, content);
   } catch (err) {
-    console.log(i'Error', err);
+    console.log('Error', err);
   }
 }
 
