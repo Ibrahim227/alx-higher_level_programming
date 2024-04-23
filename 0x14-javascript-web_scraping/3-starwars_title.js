@@ -13,4 +13,3 @@ request(apiUrl, (error, response, body) => {
     console.log(movieData.title);
   }
 });
-
