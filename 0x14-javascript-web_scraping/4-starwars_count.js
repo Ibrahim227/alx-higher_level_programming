@@ -5,7 +5,7 @@ const request = require('request');
 const apiUrl = process.argv[2];
 const characterId = 18;
 
-request(apiUrl, (error, response, body) => {
+request(apiUrl, (error, response, body, 'utf-8') => {
   if (error) {
     console.error(error);
   } else {
