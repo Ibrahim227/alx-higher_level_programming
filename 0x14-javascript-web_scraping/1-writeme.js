@@ -8,7 +8,7 @@ function WriteStringToFile (filepath, content) {
 	  console.error(err);
 	} else {
 	  console.log('');
-	
+	}
     });
 }
 
